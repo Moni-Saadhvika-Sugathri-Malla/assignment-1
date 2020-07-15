@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <h1>Q1)explore and explain the various methods in console function</h1>
+</head>
+<body>   
+    <script>
+        var car = "BMW"
+        console.clear();
+        //This method clears the console.
+        console.log("Hey hi all");
+        //this method gives out what ever  message we want to print on the console page.
+        console.error("There is an error!!");
+        /*this method outputs an error message.
+        In this method we can add additional statement or even additional aurguments too*/
+        console.time("Timetaken");
+        //This method starts a timer with the name specified as input parameter.and displays time taken to run
+        console.timeEnd("Timetaken");
+        //This method stops the specified timer and logs the elapsed time in seconds since it started
+        console.table(["Apples","Bananas","Grapes"]);
+        //This method displays tabular data as a table.the data may be an array or an object.
+        console.warn("This is a warning");
+        //This method outputs a warning message .
+        console.info("i want to buy",car);
+        //The console.info() method outputs an informational message to the Web Console. 
+        console.log("This is the outer level");
+        console.group("First group");
+        // this method creates a new inline group, indenting all following output by another level.
+        console.log("In the first group");
+        console.group("Second group");
+        console.log("In the second group");
+        console.groupEnd();
+        // To move back out a level, we call groupEnd() i.e,it exits the current inline group
+        console.log("Back to the first group");
+        console.groupEnd();
+        console.debug("Back to the outer level");
+        //The console method debug() outputs a message to the web console at the "debug" log level. The message is only displayed  if the console is configured to display debug output or else u could not see the message
+        console.exception();
+        //it is similar to console.error() method.
+    </script> 
+</body>
+</html>
